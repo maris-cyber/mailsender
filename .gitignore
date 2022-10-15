@@ -1,3 +1,7 @@
+# secrets and config
+config
+.gitlab-ci.yml
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
