@@ -1,3 +1,4 @@
+// mng - пакет, обеспечивающий взаимодействие с mongo
 package mng
 
 import (

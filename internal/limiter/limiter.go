@@ -1,3 +1,10 @@
+/*
+limiter - пакет, обеспечивающий интегральный rate limit для нескольких воркеров.
+rate limit определяется максимальным количеством действий за период времени.
+Реализуется с помощью канала, в который с заданной регулярностью подкладываются
+билеты, дающие разрешение на совершение действия. Воркеры читают из этого канала и,
+если им достаётся билетик, работают, иначе ждут своей очереди.
+*/
 package limiter
 
 import (
@@ -15,7 +22,6 @@ const (
 	DEFAULT_SMTP_RATE_PERIOD      = "5s"
 	SMTP_RATE_MAX_LETTERS         = "SMTP_RATE_LIMIT_MAX_LETTERS"
 	DEFAULT_SMTP_RATE_MAX_LETTERS = 5
-	NUM_SENDERS                   = "SMTP_MAX_SENDERS"
 )
 
 type Limiter struct {

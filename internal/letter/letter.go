@@ -1,3 +1,4 @@
+// letter - определение сущности письмо
 package letter
 
 import (

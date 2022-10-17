@@ -1,3 +1,4 @@
+// mailer - пакет, обеспечивающий отправку писем по smtp через сервис Google
 package mailer
 
 import (

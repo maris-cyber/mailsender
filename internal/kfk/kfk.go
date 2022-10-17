@@ -1,3 +1,4 @@
+// kfk - пакет, обеспечивающий взаимодействие с kafka
 package kfk
 
 import (
